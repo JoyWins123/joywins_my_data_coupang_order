@@ -1,24 +1,27 @@
 # pyproject.toml
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = [
+    "setuptools", 
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
 
 [project]
-name = "example-package"
-version = "0.1.0"
+name = "joywins_my_data_coupang_order"  # 패키지 이름
+version = "0.0.2"  # 버전 번호
 authors = [
-    { name="Your Name", email="your.email@example.com" },
+    { name="joywins123", email="joywins123@gmail.com" },  # 작성자 정보
 ]
-description = "A small example package"
+description = "쿠팡 주문 목록 스크래퍼"  # 패키지 설명
 readme = "README.md"
-requires-python = ">=3.7"
+requires-python = ">=3.8"  # 최소 파이썬 버전
 classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-]
-dependencies = [
-    "requests>=2.22.0",
+    "Development Status :: 3 - Alpha",  # 개발 상태
+    "Intended Audience :: Developers",  # 대상 사용자
+    "Programming Language :: Python :: 3.8",  # 지원하는 파이썬 버전
+    "License :: OSI Approved :: MIT License",  # 라이선스
+    "Operating System :: OS Independent",  # 지원 운영체제
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/yourusername/example-package"
+"Homepage" = "https://github.com/JoyWins123/joywins_my_data_coupang_order"  # 프로젝트 홈페이지

@@ -1,0 +1,4 @@
+graft joywins_my_data_coupang_order
+include pyproject.toml
+include setup.py 
+global-exclude *.py[cod]
