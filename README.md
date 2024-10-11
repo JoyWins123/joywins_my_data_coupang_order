@@ -44,7 +44,14 @@ pip install joywins_my_data_coupang_order
 
 ### 예시
 ```bash
-joywins_my_data_coupang_order
+from joywins_my_data_coupang_order import joywins_my_data_coupang_order as my_data
+
+if __name__ == "__main__":    
+    my_data.get()  # 전체 주문 목록 조회  
+    # my_data.get("2024.08.13")  # 2024.08.13 일자의 주문 목록 조회
+    # my_data.get(["2024.08.30", ])  # 2024.08.30 부터 현재까지 주문 목록 조회
+    # my_data.get([None, "2024.07.06"])  # 처음부터 2024.07.06 까지 주문 목록 조회
+    # my_data.get(["2024.09.02", "2024.10.04"])  # 특정 기간의 주문 목록 조회    
 ```
 
 

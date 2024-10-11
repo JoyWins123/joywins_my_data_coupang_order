@@ -34,10 +34,7 @@ MIT License
 
 ### 예시
 ```
-
 from joywins_my_data_coupang_order import joywins_my_data_coupang_order as my_data
-
-# from joywins_my_data_coupang_order.joywins_my_data_coupang_order import get
 
 if __name__ == "__main__":    
     my_data.get()  # 전체 주문 목록 조회  
